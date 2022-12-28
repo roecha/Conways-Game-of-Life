@@ -2,7 +2,7 @@
 simple simulation of Conway's Game of Life
 
 Conway's Game of Life is a zero player game where you set the initial board, click play, and see
-what happens. Typically the rules are as follows: : a dead piece with three live pieces 
+what happens. Typically the rules are as follows: a dead piece with three live pieces 
 next to it will become alive, a live cell with two or three live neighbors stays alive, and all other live 
 pieces die. This will cause the shapes of the pieces to evolve into endless different patterns.
 
