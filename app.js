@@ -1,7 +1,7 @@
 const gridContainer = document.getElementById("grid-container");
 const selectValue = document.getElementById("select-value");
 const settings = document.getElementById("settings");
-const play = document.getElementById("playButton");
+const play = document.getElementById("play-button");
 let interval;
 
 // Initialize the game board
@@ -168,8 +168,9 @@ function playGame() {
     let intervalTime = document.getElementById("interval");
 
     if (intervalTime.value > 0 && intervalTime.value <= 10000) {
-        pauseButton.innerHTML = "pause";
+        pauseButton.innerText = "Pause";
         pauseButton.setAttribute("onclick", "pauseGame()");
+        pauseButton.setAttribute("id", "play-button");
 
         settings.removeChild(settings.lastElementChild);
         settings.appendChild(pauseButton);
@@ -179,7 +180,7 @@ function playGame() {
         alert("Set interval time in between 1 and 10,000");
     }
 }
-
+ 
 function playGameHelper() {
     for (let i = 0; i < gridSize; i++) {
         for (let j = 0; j < gridSize; j++) {
